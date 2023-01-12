@@ -1,0 +1,15 @@
+### Generates a short URL when the long URL is given
+POST http://localhost:3003/create-url
+Content-Type: application/json
+
+{
+   "origUrl": "https://github.com/lucia-cufre"
+}
+
+### Provides a long URL based on the given short URL
+GET http://localhost:3003/get-origin-url
+Content-Type: application/json
+
+{
+   "shortUrl": "www.ur.com/J-VieG3CmNq"
+}
